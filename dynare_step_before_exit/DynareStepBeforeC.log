@@ -1,0 +1,87 @@
+Starting preprocessing of the model file ...
+Found 28 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+at        		 0
+y_ht      		 -1.07918
+ct        		 -1.51862
+c_ht      		 -2.23397
+c_ft      		 -2.18956
+nt        		 -1.45652
+xt        		 -2.86067
+kt        		 -0.558086
+f_ht      		 -1.10749
+mt        		 -1.47455
+ttt       		 -0.0444074
+pit       		 0
+pi_ht     		 0
+thetat    		 0
+deltat    		 0
+wt        		 -0.327501
+mct       		 -0.160118
+dt        		 -2.84874
+r_kt      		 -1.57092
+qt        		 0.0405095
+f_ttt     		 -1.77233
+pi_star   		 0
+z1t       		 -0.402761
+z2t       		 -0.585083
+rt        		 0.0405095
+c_f_start 		 -2.29492
+lt        		 0.13582
+tau_ct    		 -1.77196
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       5.778e-18        5.778e-18                0
+       3.307e-17       -3.307e-17                0
+       4.143e-17        4.143e-17                0
+       7.857e-17        7.857e-17                0
+       1.041e-16        1.041e-16                0
+       5.131e-16       -5.131e-16                0
+          0.2381          -0.2381                0
+             0.5              0.5                0
+          0.8626           0.8626                0
+            0.92             0.92                0
+          0.9979           0.9979                0
+            1.02             1.02                0
+           1.252            1.252                0
+           2.083            2.083                0
+           4.097            4.097                0
+       4.728e+30        4.728e+30                0
+        9.35e+30        -9.35e+30                0
+        1.74e+32         1.74e+32                0
+       4.982e+33        4.982e+33                0
+             Inf              Inf                0
+             Inf              Inf                0
+
+
+There are 10 eigenvalue(s) larger than 1 in modulus 
+for 10 forward-looking variable(s)
+
+The rank condition is verified.
+
+  n=2: (3,6)-CMA-ES(w=[64 28 8]%, mu_eff=2.0) on function osr_obj
+Iterat, #Fevals:   Function Value    (median,worst) |Axis Ratio|idx:Min SD idx:Max SD
+    1 ,      7 : 1.8296918082009e-03 +(8e-05,8e-05) | 2.21e+02 |  2:6.8e-03  1:1.5e+00
+    2 ,     13 : 1.8270421434819e-03 +(4e-05,5e-05) | 2.11e+02 |  2:5.3e-03  1:1.1e+00
+   10 ,     61 : 1.8297936361401e-03 +(3e-05,7e-05) | 8.81e+01 |  2:9.7e-03  1:8.5e-01
+   20 ,    121 : 1.8149465151569e-03 +(2e-04,6e-03) | 2.84e+01 |  2:3.5e-03  1:1.0e-01
+   30 ,    181 : 1.8146244208522e-03 +(7e-07,4e-06) | 1.12e+01 |  2:1.6e-03  1:1.7e-02
+   40 ,    241 : 1.8146202145210e-03 +(2e-09,2e-08) | 6.53e+00 |  2:3.0e-04  1:1.9e-03
+   50 ,    301 : 1.8146159519289e-03 +(6e-10,2e-09) | 3.82e+00 |  2:1.2e-04  1:4.4e-04
+   56 ,    337 : 1.8146139209948e-03 +(1e-09,1e-09) | 2.46e+00 |  2:1.9e-04  1:3.2e-04
+#Fevals:   f(returned x)   |    bestever.f     | stopflag (saved to variablescmaes.mat)
+    338: 1.81461392099e-03 | 1.81461392099e-03 | tolfun
+mean solution: +7.9e-01 +2.4e-01
+std deviation:  3.2e-04  1.9e-04
+use plotcmaesdat.m for plotting the output at any time (option LogModulo must not be zero)
+Total computing time : 0h00m21s

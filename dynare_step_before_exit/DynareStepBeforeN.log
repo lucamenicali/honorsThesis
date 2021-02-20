@@ -1,0 +1,159 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+Found 29 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+at        		 0
+y_ht      		 -1.07918
+ct        		 -1.51862
+c_ht      		 -2.23397
+c_ft      		 -2.18956
+nt        		 -1.45652
+xt        		 -2.86067
+kt        		 -0.558086
+f_ht      		 -1.10749
+mt        		 -1.47455
+ttt       		 -0.0444074
+pit       		 0
+pi_ht     		 0
+thetat    		 0
+deltat    		 0
+wt        		 -0.327501
+mct       		 -0.160118
+dt        		 -2.84874
+r_kt      		 -1.57092
+qt        		 0.0405095
+f_ttt     		 -1.77233
+pi_star   		 0
+z1t       		 -0.402761
+z2t       		 -0.585083
+rt        		 0.0405095
+c_f_start 		 -2.29492
+lt        		 0.13582
+tau_nt    		 -0.867501
+kdy       		 0.521094
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+       2.126e-18       -2.126e-18                0
+       1.842e-17       -1.842e-17                0
+       5.286e-17       -5.286e-17                0
+       1.365e-16       -1.365e-16                0
+        1.68e-16        -1.68e-16                0
+       2.736e-16       -2.736e-16                0
+          0.2411          -0.2411                0
+             0.5              0.5                0
+          0.8513           0.8513                0
+            0.92             0.92                0
+          0.9976           0.9976                0
+           1.018            1.018                0
+           1.251            1.251                0
+           2.083            2.083                0
+           4.102            4.102                0
+       9.014e+30        9.014e+30                0
+       2.566e+31        2.566e+31                0
+       1.869e+32        1.869e+32                0
+       5.086e+32        5.086e+32                0
+       1.234e+33       -1.234e+33                0
+
+
+There are 9 eigenvalue(s) larger than 1 in modulus 
+for 9 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+OPTIMAL SIMPLE RULE
+
+
+OSR: Initial value of the objective function: 0.00187337 
+
+  n=2: (3,6)-CMA-ES(w=[64 28 8]%, mu_eff=2.0) on function osr_obj
+Iterat, #Fevals:   Function Value    (median,worst) |Axis Ratio|idx:Min SD idx:Max SD
+    1 ,      7 : 1.7830170557938e-03 +(2e-05,2e-05) | 1.12e+02 |  2:8.3e-03  1:9.3e-01
+    2 ,     13 : 1.7728554651780e-03 +(1e-05,8e-05) | 1.40e+02 |  2:8.1e-03  1:1.1e+00
+   10 ,     61 : 1.7662645794248e-03 +(8e-07,3e-06) | 8.21e+01 |  2:6.0e-03  1:4.9e-01
+   20 ,    121 : 1.7636369377335e-03 +(5e-07,2e-06) | 1.30e+01 |  2:4.0e-02  1:5.1e-01
+   30 ,    181 : 1.7473935998449e-03 +(2e-05,1e+08) | 4.52e+00 |  2:3.2e-01  1:1.4e+00
+   40 ,    241 : 1.7444505161655e-03 +(7e-07,2e-06) | 6.56e+00 |  2:9.6e-02  1:5.7e-01
+   50 ,    301 : 1.7439961611418e-03 +(1e-08,5e-08) | 7.10e+00 |  2:1.0e-02  1:6.9e-02
+   60 ,    361 : 1.7439389512669e-03 +(8e-09,1e+08) | 1.05e+01 |  2:1.9e-03  1:2.0e-02
+   66 ,    397 : 1.7439364926501e-03 +(1e-09,8e-09) | 1.62e+01 |  2:7.0e-04  1:1.1e-02
+#Fevals:   f(returned x)   |    bestever.f     | stopflag (saved to variablescmaes.mat)
+    398: 1.74393649265e-03 | 1.74393282699e-03 | tolfun
+mean solution: +5.1e+00 +1.7e+00
+std deviation:  1.1e-02  7.0e-04
+use plotcmaesdat.m for plotting the output at any time (option LogModulo must not be zero)
+
+OPTIMAL VALUE OF THE PARAMETERS:
+
+      gamm_nl             5.13164
+
+      gamm_ny             1.68025
+
+Objective function :       0.00174393
+
+
+
+MODEL SUMMARY
+
+  Number of variables:         29
+  Number of stochastic shocks: 1
+  Number of state variables:   11
+  Number of jumpers:           9
+  Number of static variables:  10
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       etaat
+etaat        0.010000
+
+POLICY AND TRANSITION FUNCTIONS
+                                y_ht             pit              rt
+Constant                   -1.079180               0        0.040510
+at(-1)                      0.817079       -0.213350       -0.005436
+y_ht(-1)                   -0.397763        0.056823        0.009450
+kt(-1)                     -0.024067       -0.206704        0.010256
+f_ht(-1)                   -0.316314       -0.098320        0.010363
+mt(-1)                     -0.026006        0.022301        0.011005
+deltat(-1)                 -0.311516        0.072881        0.001734
+qt(-1)                     -0.170521       -0.028984        0.013613
+f_ttt(-1)                   0.145793        0.069336        0.003250
+rt(-1)                     -0.024670        0.021155        0.010440
+lt(-1)                     -1.139459        0.108934       -0.003022
+ttt(-1)                     0.664852        0.369721       -0.033373
+etaat                       0.088813       -0.023190       -0.000591
+
+
+THEORETICAL MOMENTS
+VARIABLE         MEAN  STD. DEV.   VARIANCE
+y_ht          -1.0792     0.0417     0.0017
+pit            0.0000     0.0025     0.0000
+rt             0.0405     0.0002     0.0000
+
+
+
+MATRIX OF CORRELATIONS
+Variables      y_ht     pit      rt
+y_ht         1.0000 -0.2093 -0.9821
+pit         -0.2093  1.0000  0.2100
+rt          -0.9821  0.2100  1.0000
+
+
+
+COEFFICIENTS OF AUTOCORRELATION
+Order         1       2       3       4       5
+y_ht     0.9733  0.9298  0.8883  0.8545  0.8215
+pit      0.3333  0.2236  0.1159  0.0871  0.0938
+rt       0.9526  0.8895  0.8729  0.8768  0.8598
+Total computing time : 0h00m09s
